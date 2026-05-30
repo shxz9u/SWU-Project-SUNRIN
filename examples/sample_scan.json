@@ -1,0 +1,25 @@
+{
+  "device": {
+    "target_id": "iot-device-001",
+    "connection_type": "network",
+    "ip": "192.168.0.25",
+    "device_type": "unknown"
+  },
+  "network_scan": {
+    "open_ports": [
+      {
+        "port": 80,
+        "protocol": "tcp",
+        "service": "http",
+        "banner": "Boa/0.94.14rc21"
+      }
+    ]
+  },
+  "observations": [
+    {
+      "type": "service_banner",
+      "source": "http",
+      "evidence": "Embedded HTTP server banner was exposed"
+    }
+  ]
+}
