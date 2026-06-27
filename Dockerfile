@@ -20,7 +20,7 @@ RUN apt-get update \
         make \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install --no-cache-dir requests
+RUN pip install --no-cache-dir requests boofuzz
 
 COPY analyzer/ /app/analyzer/
 

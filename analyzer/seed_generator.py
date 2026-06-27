@@ -23,6 +23,7 @@ BLOCKED_SEED_PATTERNS = (
     "poweroff",
     "reboot",
     "halt",
+    "touch /tmp",
 )
 
 

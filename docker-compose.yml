@@ -30,6 +30,7 @@ services:
       FUZZ_RANDOM_SEED: 1337
       FUZZ_VERIFY_RUNS: 3
       FUZZ_VERIFY_THRESHOLD: 2
+      BOOFUZZ_MAX_CASES: 200
       WORK_DIR: /work
     volumes:
       - ./work:/work

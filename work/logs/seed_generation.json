@@ -35,21 +35,35 @@
       "path": "/work/seeds/LLM-002_seed_002.txt",
       "source": "llm",
       "candidate_id": "LLM-002",
-      "size": 48
+      "size": 50
+    },
+    {
+      "name": "LLM-002_seed_003.txt",
+      "path": "/work/seeds/LLM-002_seed_003.txt",
+      "source": "llm",
+      "candidate_id": "LLM-002",
+      "size": 51
     },
     {
       "name": "LLM-003_seed_001.txt",
       "path": "/work/seeds/LLM-003_seed_001.txt",
       "source": "llm",
       "candidate_id": "LLM-003",
-      "size": 47
+      "size": 8
     },
     {
       "name": "LLM-003_seed_002.txt",
       "path": "/work/seeds/LLM-003_seed_002.txt",
       "source": "llm",
       "candidate_id": "LLM-003",
-      "size": 71
+      "size": 47
+    },
+    {
+      "name": "LLM-003_seed_003.txt",
+      "path": "/work/seeds/LLM-003_seed_003.txt",
+      "source": "llm",
+      "candidate_id": "LLM-003",
+      "size": 48
     },
     {
       "name": "LLM-004_seed_001.txt",
@@ -85,20 +99,6 @@
       "source": "llm",
       "candidate_id": "LLM-005",
       "size": 20
-    },
-    {
-      "name": "LLM-006_seed_001.txt",
-      "path": "/work/seeds/LLM-006_seed_001.txt",
-      "source": "llm",
-      "candidate_id": "LLM-006",
-      "size": 12
-    },
-    {
-      "name": "LLM-006_seed_002.txt",
-      "path": "/work/seeds/LLM-006_seed_002.txt",
-      "source": "llm",
-      "candidate_id": "LLM-006",
-      "size": 19
     },
     {
       "name": "baseline_seed_001.txt",

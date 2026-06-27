@@ -6,10 +6,13 @@ import time
 from pathlib import Path
 from typing import Any
 
+from analyzer.boofuzz_fuzzer import run_boofuzz_route
 from analyzer.candidate_parser import parse_llm_candidates
+from analyzer.comparison_writer import write_comparison_outputs
 from analyzer.ollama_client import OllamaClient, OllamaError
 from analyzer.prompt_builder import build_vulnerability_prompt
 from analyzer.result_writer import write_final_report, write_json
+from analyzer.resource_monitor import measure_resource_usage
 from analyzer.seed_generator import generate_seed_files
 from analyzer.simple_fuzzer import build_error_outputs, fuzz, prepare_target
 from analyzer.verifier import verify_findings
@@ -165,6 +168,7 @@ def run_pipeline(
     verify_runs = int(os.getenv("FUZZ_VERIFY_RUNS", "3"))
     verify_threshold = int(os.getenv("FUZZ_VERIFY_THRESHOLD", "2"))
     recompile = os.getenv("FUZZ_RECOMPILE", "1") == "1"
+    boofuzz_max_cases = int(os.getenv("BOOFUZZ_MAX_CASES", "200"))
 
     ground_truth = load_ground_truth(dirs["target"])
     target_info: dict[str, Any] = {
@@ -174,19 +178,6 @@ def run_pipeline(
         "ground_truth": ground_truth,
         "ground_truth_count": len(ground_truth),
     }
-
-    source_path = dirs["target"] / "input.c"
-    logging.info("running LLM candidate analysis")
-    llm_result = run_llm_analysis(client, source_path, dirs["logs"])
-    logging.info("LLM candidate status: %s", llm_result.get("status"))
-    logging.info("LLM candidate count: %d", len(llm_result.get("candidates", [])))
-
-    seed_result = generate_seed_files(
-        llm_result.get("candidates", []),
-        dirs["seeds"],
-        dirs["logs"],
-    )
-    logging.info("seed generation complete: %d seeds", seed_result["seed_count"])
 
     try:
         binary_path, prepared_target = prepare_target(
@@ -199,37 +190,112 @@ def run_pipeline(
         build_error_outputs(dirs["logs"], target_info, str(exc))
         return 2
 
-    fuzz_result = fuzz(
-        binary_path=binary_path,
-        dirs=dirs,
-        iterations=iterations,
-        timeout_seconds=timeout_seconds,
-        input_mode=input_mode,
-        rng_seed=rng_seed,
-        max_input_bytes=max_input_bytes,
-    )
-    fuzz_result["target_info"] = target_info
-    fuzz_result["seed_generation"] = seed_result
+    resource_log: dict[str, Any] = {"routes": {}}
+    source_path = dirs["target"] / "input.c"
+    llm_crashes_dir = dirs["crashes"] / "llm_fuzzer"
+    boofuzz_crashes_dir = dirs["crashes"] / "boofuzz"
+    llm_dirs = {**dirs, "crashes": llm_crashes_dir}
 
-    verification_result = verify_findings(
-        binary_path=binary_path,
-        findings=fuzz_result["suspicious_findings"],
-        input_mode=input_mode,
-        timeout_seconds=timeout_seconds,
-        runs_per_finding=verify_runs,
-        confirmation_threshold=verify_threshold,
-    )
+    logging.info("running LLM fuzzer route")
+    with measure_resource_usage("llm_fuzzer") as llm_resource:
+        llm_result = run_llm_analysis(client, source_path, dirs["logs"])
+        logging.info("LLM candidate status: %s", llm_result.get("status"))
+        logging.info(
+            "LLM candidate count: %d", len(llm_result.get("candidates", []))
+        )
+
+        seed_result = generate_seed_files(
+            llm_result.get("candidates", []),
+            dirs["seeds"],
+            dirs["logs"],
+        )
+        logging.info("seed generation complete: %d seeds", seed_result["seed_count"])
+
+        fuzz_result = fuzz(
+            binary_path=binary_path,
+            dirs=llm_dirs,
+            iterations=iterations,
+            timeout_seconds=timeout_seconds,
+            input_mode=input_mode,
+            rng_seed=rng_seed,
+            max_input_bytes=max_input_bytes,
+        )
+        fuzz_result["target_info"] = target_info
+        fuzz_result["seed_generation"] = seed_result
+
+        verification_result = verify_findings(
+            binary_path=binary_path,
+            findings=fuzz_result["suspicious_findings"],
+            input_mode=input_mode,
+            timeout_seconds=timeout_seconds,
+            runs_per_finding=verify_runs,
+            confirmation_threshold=verify_threshold,
+        )
+
+    resource_log["routes"]["llm_fuzzer"] = llm_resource
+    llm_route_result = {
+        "status": "OK",
+        "route": "llm_fuzzer",
+        "duration_seconds": llm_resource.get("wall_time_seconds", 0),
+        "resource_usage": llm_resource,
+        "llm_candidates": llm_result,
+        "seed_generation": seed_result,
+        "fuzz_result": fuzz_result,
+        "verification_result": verification_result,
+    }
 
     target_info["total_duration_seconds"] = round(time.monotonic() - started, 6)
     fuzz_result["target_info"] = target_info
 
     write_json(dirs["logs"] / "fuzz_result.json", fuzz_result)
     write_json(dirs["logs"] / "verification_result.json", verification_result)
+    write_json(dirs["logs"] / "llm_fuzzer_result.json", llm_route_result)
+    write_json(
+        dirs["logs"] / "llm_fuzzer_verification_result.json",
+        verification_result,
+    )
     write_final_report(dirs["logs"], target_info, fuzz_result, verification_result)
 
+    logging.info("running boofuzz route")
+    with measure_resource_usage("boofuzz") as boofuzz_resource:
+        boofuzz_result, boofuzz_verification_result = run_boofuzz_route(
+            binary_path=binary_path,
+            logs_dir=dirs["logs"],
+            crashes_dir=boofuzz_crashes_dir,
+            input_mode=input_mode,
+            timeout_seconds=timeout_seconds,
+            max_cases=boofuzz_max_cases,
+            verify_runs=verify_runs,
+            verify_threshold=verify_threshold,
+        )
+
+    resource_log["routes"]["boofuzz"] = boofuzz_resource
+    boofuzz_result["resource_usage"] = boofuzz_resource
+    write_json(dirs["logs"] / "boofuzz_result.json", boofuzz_result)
+    write_json(
+        dirs["logs"] / "boofuzz_verification_result.json",
+        boofuzz_verification_result,
+    )
+
+    llm_route_result["duration_seconds"] = llm_resource.get("wall_time_seconds", 0)
+    llm_route_result["resource_usage"] = llm_resource
+    write_json(dirs["logs"] / "llm_fuzzer_result.json", llm_route_result)
+
+    write_json(dirs["logs"] / "resource_usage.json", resource_log)
+    write_comparison_outputs(
+        logs_dir=dirs["logs"],
+        ground_truth=ground_truth,
+        llm_route_result=llm_route_result,
+        boofuzz_result=boofuzz_result,
+        boofuzz_verification_result=boofuzz_verification_result,
+        resource_log=resource_log,
+    )
+
+    target_info["total_duration_seconds"] = round(time.monotonic() - started, 6)
     logging.info("fuzzing complete: %s", dirs["logs"] / "fuzz_result.json")
     logging.info("verification complete: %s", dirs["logs"] / "verification_result.json")
     logging.info("report written: %s", dirs["logs"] / "final_report.md")
+    logging.info("comparison written: %s", dirs["logs"] / "comparison_report.md")
     logging.info("pipeline completed in %.6f seconds", target_info["total_duration_seconds"])
     return 0
 

@@ -206,6 +206,7 @@ def save_suspicious_input(
 
 
 def clear_generated_crashes(crashes_dir: Path) -> None:
+    crashes_dir.mkdir(parents=True, exist_ok=True)
     for path in crashes_dir.iterdir():
         if path.is_file() and path.name.startswith("FUZZ-") and path.suffix == ".input":
             path.unlink()

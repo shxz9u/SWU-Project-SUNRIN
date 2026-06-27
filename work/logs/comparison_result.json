@@ -1,0 +1,124 @@
+{
+  "status": "OK",
+  "ground_truth_count": 6,
+  "ground_truth_ids": [
+    "GT-001",
+    "GT-002",
+    "GT-003",
+    "GT-004",
+    "GT-005",
+    "GT-006"
+  ],
+  "routes": [
+    {
+      "route": "LLM Fuzzer",
+      "raw_result_file": "/work/logs/llm_fuzzer_result.json",
+      "detected_ground_truth_ids": [
+        "GT-001",
+        "GT-002",
+        "GT-003",
+        "GT-004",
+        "GT-005"
+      ],
+      "confirmed_ground_truth_ids": [
+        "GT-001",
+        "GT-002",
+        "GT-003"
+      ],
+      "detection_rate": 83.33,
+      "confirmed_detection_rate": 50.0,
+      "candidate_or_case_count": 5,
+      "confirmed_count": 3,
+      "false_positive_count": 2,
+      "resource": {
+        "wall_time_seconds": 43.377268,
+        "total_cpu_seconds": 0.836672,
+        "average_cpu_percent": 1.93,
+        "max_rss_kb": 107452
+      },
+      "candidate_ids_by_truth": {
+        "GT-001": [
+          "LLM-001",
+          "LLM-002",
+          "LLM-003"
+        ],
+        "GT-003": [
+          "LLM-001",
+          "LLM-002",
+          "LLM-003"
+        ],
+        "GT-002": [
+          "LLM-001",
+          "LLM-002",
+          "LLM-003",
+          "LLM-005"
+        ],
+        "GT-004": [
+          "LLM-004"
+        ],
+        "GT-005": [
+          "LLM-005"
+        ]
+      }
+    },
+    {
+      "route": "boofuzz",
+      "raw_result_file": "/work/logs/boofuzz_result.json",
+      "detected_ground_truth_ids": [
+        "GT-001",
+        "GT-002",
+        "GT-003",
+        "GT-004"
+      ],
+      "confirmed_ground_truth_ids": [
+        "GT-001",
+        "GT-002",
+        "GT-003",
+        "GT-004"
+      ],
+      "detection_rate": 66.67,
+      "confirmed_detection_rate": 66.67,
+      "candidate_or_case_count": 84,
+      "confirmed_count": 20,
+      "false_positive_count": 0,
+      "resource": {
+        "wall_time_seconds": 0.600668,
+        "total_cpu_seconds": 0.613296,
+        "average_cpu_percent": 102.1,
+        "max_rss_kb": 107452
+      }
+    }
+  ],
+  "resource_log": {
+    "routes": {
+      "llm_fuzzer": {
+        "label": "llm_fuzzer",
+        "wall_time_seconds": 43.377268,
+        "self_user_cpu_seconds": 0.078795,
+        "self_system_cpu_seconds": 0.028655,
+        "child_user_cpu_seconds": 0.242579,
+        "child_system_cpu_seconds": 0.486643,
+        "total_cpu_seconds": 0.836672,
+        "average_cpu_percent": 1.93,
+        "max_rss_kb": 107452
+      },
+      "boofuzz": {
+        "label": "boofuzz",
+        "wall_time_seconds": 0.600668,
+        "self_user_cpu_seconds": 0.238526,
+        "self_system_cpu_seconds": 0.023748,
+        "child_user_cpu_seconds": 0.139474,
+        "child_system_cpu_seconds": 0.211548,
+        "total_cpu_seconds": 0.613296,
+        "average_cpu_percent": 102.1,
+        "max_rss_kb": 107452
+      }
+    }
+  },
+  "metric_notes": {
+    "detection_rate": "detected ground-truth ids / all ground-truth ids",
+    "time": "route wall-clock seconds",
+    "resource": "resource.getrusage based CPU seconds and max RSS",
+    "false_positive_count": "LLM route: unconfirmed candidates; boofuzz route: non-reproduced suspicious findings"
+  }
+}
