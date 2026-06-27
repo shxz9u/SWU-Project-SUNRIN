@@ -55,6 +55,8 @@ def verify_findings(
             {
                 "finding_id": finding.get("finding_id"),
                 "status": status,
+                "seed_name": finding.get("seed_name"),
+                "seed_path": finding.get("seed_path"),
                 "input_path": str(input_path),
                 "input_sha256": finding.get("input_sha256"),
                 "expected_issue_type": expected_issue_type,

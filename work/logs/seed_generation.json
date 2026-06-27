@@ -1,0 +1,167 @@
+{
+  "status": "OK",
+  "seed_count": 23,
+  "seeds": [
+    {
+      "name": "LLM-001_seed_001.txt",
+      "path": "/work/seeds/LLM-001_seed_001.txt",
+      "source": "llm",
+      "candidate_id": "LLM-001",
+      "size": 7
+    },
+    {
+      "name": "LLM-001_seed_002.txt",
+      "path": "/work/seeds/LLM-001_seed_002.txt",
+      "source": "llm",
+      "candidate_id": "LLM-001",
+      "size": 46
+    },
+    {
+      "name": "LLM-001_seed_003.txt",
+      "path": "/work/seeds/LLM-001_seed_003.txt",
+      "source": "llm",
+      "candidate_id": "LLM-001",
+      "size": 47
+    },
+    {
+      "name": "LLM-002_seed_001.txt",
+      "path": "/work/seeds/LLM-002_seed_001.txt",
+      "source": "llm",
+      "candidate_id": "LLM-002",
+      "size": 11
+    },
+    {
+      "name": "LLM-002_seed_002.txt",
+      "path": "/work/seeds/LLM-002_seed_002.txt",
+      "source": "llm",
+      "candidate_id": "LLM-002",
+      "size": 48
+    },
+    {
+      "name": "LLM-003_seed_001.txt",
+      "path": "/work/seeds/LLM-003_seed_001.txt",
+      "source": "llm",
+      "candidate_id": "LLM-003",
+      "size": 47
+    },
+    {
+      "name": "LLM-003_seed_002.txt",
+      "path": "/work/seeds/LLM-003_seed_002.txt",
+      "source": "llm",
+      "candidate_id": "LLM-003",
+      "size": 71
+    },
+    {
+      "name": "LLM-004_seed_001.txt",
+      "path": "/work/seeds/LLM-004_seed_001.txt",
+      "source": "llm",
+      "candidate_id": "LLM-004",
+      "size": 13
+    },
+    {
+      "name": "LLM-004_seed_002.txt",
+      "path": "/work/seeds/LLM-004_seed_002.txt",
+      "source": "llm",
+      "candidate_id": "LLM-004",
+      "size": 11
+    },
+    {
+      "name": "LLM-004_seed_003.txt",
+      "path": "/work/seeds/LLM-004_seed_003.txt",
+      "source": "llm",
+      "candidate_id": "LLM-004",
+      "size": 11
+    },
+    {
+      "name": "LLM-005_seed_001.txt",
+      "path": "/work/seeds/LLM-005_seed_001.txt",
+      "source": "llm",
+      "candidate_id": "LLM-005",
+      "size": 27
+    },
+    {
+      "name": "LLM-005_seed_002.txt",
+      "path": "/work/seeds/LLM-005_seed_002.txt",
+      "source": "llm",
+      "candidate_id": "LLM-005",
+      "size": 20
+    },
+    {
+      "name": "LLM-006_seed_001.txt",
+      "path": "/work/seeds/LLM-006_seed_001.txt",
+      "source": "llm",
+      "candidate_id": "LLM-006",
+      "size": 12
+    },
+    {
+      "name": "LLM-006_seed_002.txt",
+      "path": "/work/seeds/LLM-006_seed_002.txt",
+      "source": "llm",
+      "candidate_id": "LLM-006",
+      "size": 19
+    },
+    {
+      "name": "baseline_seed_001.txt",
+      "path": "/work/seeds/baseline_seed_001.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 48
+    },
+    {
+      "name": "baseline_seed_002.txt",
+      "path": "/work/seeds/baseline_seed_002.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 70
+    },
+    {
+      "name": "baseline_seed_003.txt",
+      "path": "/work/seeds/baseline_seed_003.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 70
+    },
+    {
+      "name": "baseline_seed_004.txt",
+      "path": "/work/seeds/baseline_seed_004.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 21
+    },
+    {
+      "name": "baseline_seed_005.txt",
+      "path": "/work/seeds/baseline_seed_005.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 13
+    },
+    {
+      "name": "baseline_seed_006.txt",
+      "path": "/work/seeds/baseline_seed_006.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 11
+    },
+    {
+      "name": "baseline_seed_007.txt",
+      "path": "/work/seeds/baseline_seed_007.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 15
+    },
+    {
+      "name": "baseline_seed_008.txt",
+      "path": "/work/seeds/baseline_seed_008.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 8
+    },
+    {
+      "name": "baseline_seed_009.txt",
+      "path": "/work/seeds/baseline_seed_009.txt",
+      "source": "baseline",
+      "candidate_id": null,
+      "size": 11
+    }
+  ]
+}

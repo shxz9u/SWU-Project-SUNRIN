@@ -205,6 +205,12 @@ def save_suspicious_input(
     return path
 
 
+def clear_generated_crashes(crashes_dir: Path) -> None:
+    for path in crashes_dir.iterdir():
+        if path.is_file() and path.name.startswith("FUZZ-") and path.suffix == ".input":
+            path.unlink()
+
+
 def fuzz(
     binary_path: Path,
     dirs: dict[str, Path],
@@ -221,6 +227,7 @@ def fuzz(
     suspicious: list[dict[str, Any]] = []
     seen_suspicious_hashes: set[str] = set()
 
+    clear_generated_crashes(dirs["crashes"])
     logging.info("loaded %d seed inputs", len(seeds))
     logging.info("starting mutation fuzzing: iterations=%d", iterations)
 

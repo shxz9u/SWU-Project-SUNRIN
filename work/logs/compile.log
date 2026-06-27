@@ -1,0 +1,12 @@
+$ clang -fsanitize=address,undefined -g -O1 -o /work/target/target_binary /work/target/input.c
+exit_code=0
+
+/work/target/input.c:49:16: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+   49 |         printf(value);
+      |                ^~~~~
+/work/target/input.c:49:16: note: treat the string as an argument to avoid this
+   49 |         printf(value);
+      |                ^
+      |                "%s", 
+1 warning generated.
+

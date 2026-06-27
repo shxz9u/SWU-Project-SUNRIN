@@ -1,0 +1,3 @@
+ssid=lab-gateway
+password=guest1234
+log=boot ok

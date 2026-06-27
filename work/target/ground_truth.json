@@ -1,0 +1,41 @@
+{
+  "target": "iot_config_gateway",
+  "vulnerabilities": [
+    {
+      "id": "GT-001",
+      "vulnerability_type": "buffer_overflow",
+      "function": "parse_config_line",
+      "expected_evidence": "strcpy(ssid_tmp, value) copies ssid without length validation"
+    },
+    {
+      "id": "GT-002",
+      "vulnerability_type": "buffer_overflow",
+      "function": "parse_config_line",
+      "expected_evidence": "strcpy(password_tmp, value) copies password without length validation"
+    },
+    {
+      "id": "GT-003",
+      "vulnerability_type": "buffer_overflow",
+      "function": "parse_config_line",
+      "expected_evidence": "strcat(config->topic, value) appends topic without bounds checking"
+    },
+    {
+      "id": "GT-004",
+      "vulnerability_type": "format_string",
+      "function": "parse_config_line",
+      "expected_evidence": "printf(value) uses user-controlled log text as a format string"
+    },
+    {
+      "id": "GT-005",
+      "vulnerability_type": "hardcoded_credentials",
+      "function": "parse_config_line",
+      "expected_evidence": "ADMIN_USER and ADMIN_PASSWORD are compiled into the binary"
+    },
+    {
+      "id": "GT-006",
+      "vulnerability_type": "missing_input_validation",
+      "function": "parse_config_line",
+      "expected_evidence": "atoi(value) accepts port without numeric range validation"
+    }
+  ]
+}

@@ -1,0 +1,1366 @@
+{
+  "status": "OK",
+  "runs_per_finding": 3,
+  "confirmation_threshold": 2,
+  "duration_seconds": 0.681558,
+  "findings": [
+    {
+      "finding_id": "FUZZ-001",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_003.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-001_sanitizer_error.input",
+      "input_sha256": "f2518bd11cc203f9f67aacf66c1816bb465a1213a6cb79f52e3c056edc2c9e61",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007198,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006852,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00658,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-002",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_003.txt",
+      "seed_path": "/work/seeds/baseline_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-002_sanitizer_error.input",
+      "input_sha256": "3f8c422923c9c3208212f8a605569bf0e3f7b2b8558baf55a27bbf29944ad6fb",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006963,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006576,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007293,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-003",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_005.txt",
+      "seed_path": "/work/seeds/baseline_seed_005.txt",
+      "input_path": "/work/crashes/FUZZ-003_sanitizer_error.input",
+      "input_sha256": "7a6a63e96554bdf730fbd5c2d360bd54dda771131b06f474d62363686e4788f0",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006841,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006367,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00656,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-004",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_003.txt",
+      "seed_path": "/work/seeds/baseline_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-004_sanitizer_error.input",
+      "input_sha256": "6e020678fb1c0754d774a184370141c975e97882dc3cb01f74bce4fba3bc0b4a",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006787,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007225,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007308,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-005",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_005.txt",
+      "seed_path": "/work/seeds/baseline_seed_005.txt",
+      "input_path": "/work/crashes/FUZZ-005_sanitizer_error.input",
+      "input_sha256": "ec1b952fc213e07dafe80df13ff11cf36fb3e9abd15a690363f69be324d8ab8e",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006465,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006199,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006428,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-006",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-006_sanitizer_error.input",
+      "input_sha256": "6c7e46055ce2c45e067efff296b9aa79431548e1cc6a4042b1c0a412704bf302",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006731,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006516,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006738,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-007",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-002_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-002_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-007_sanitizer_error.input",
+      "input_sha256": "bcf0e7a82918e52ad34c4235afa46163cb0e9ff7ed9903cf38c55c29fe0092b0",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00703,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006677,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006753,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-008",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_005.txt",
+      "seed_path": "/work/seeds/baseline_seed_005.txt",
+      "input_path": "/work/crashes/FUZZ-008_sanitizer_error.input",
+      "input_sha256": "0061ac11dcf94f1f00d9766ec74eb723831c3458f4a4dc128895ba2268c6adb8",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006696,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006508,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00645,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-009",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-009_sanitizer_error.input",
+      "input_sha256": "6d4ce1d7e8e277a94e33b32db81023496ff4788f27b06a25c7be9641d535e234",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006511,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006607,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007097,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-010",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_003.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-010_sanitizer_error.input",
+      "input_sha256": "081a9ff582121109d75130d85cf00bdb3930113ae806953eefe6e1c4ef7b126d",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006734,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006868,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006833,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-011",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-003_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-003_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-011_sanitizer_error.input",
+      "input_sha256": "e626a81f26dc02d2529eec965efda26af5cd467654a151e8ffaac56751e8966c",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006862,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006543,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007547,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-012",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-012_sanitizer_error.input",
+      "input_sha256": "85b48a9f8e234971319591cefe680b852082691b3a2b5288e38a6232d617ea34",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006831,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006476,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006958,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-013",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_003.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-013_sanitizer_error.input",
+      "input_sha256": "be977e8b2a7bc4aa98c8c75d93999481dab15d463a01de29a75c262bdb4512d4",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006877,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006589,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006667,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-014",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-003_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-003_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-014_sanitizer_error.input",
+      "input_sha256": "38808ddca05e846101ebf0598991f1e232e9360cc3a554720d63afc75d3f0cef",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006823,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006912,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006723,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-015",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_002.txt",
+      "seed_path": "/work/seeds/baseline_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-015_sanitizer_error.input",
+      "input_sha256": "26d1e0e83803dd0908c7041d994b00ef21fdc796f445dadc020b484483efd250",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006636,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00657,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006749,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-016",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_003.txt",
+      "seed_path": "/work/seeds/baseline_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-016_sanitizer_error.input",
+      "input_sha256": "78050dbc017231027980eb3e006034b81fb097e921f6f374368fa01c440431d7",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006722,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006508,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006991,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-017",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-017_sanitizer_error.input",
+      "input_sha256": "5ee77ad30fefbd4fb49db3e2fee4c927df71120c84d1fe84bdd92e5c5feab0bc",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006719,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006625,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007027,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-018",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_003.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-018_sanitizer_error.input",
+      "input_sha256": "6dfd6645ae7dbb5049613ccf604199ef02b9de58dc5270ab6ab895e81f0b773a",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006631,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006736,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006452,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-019",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-003_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-003_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-019_sanitizer_error.input",
+      "input_sha256": "bf389d6c94bb92b66a27b2fe8ff75c340d930bc1e30f449cc3e6f0e8b8ebfa9e",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006837,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006936,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006735,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-020",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-020_sanitizer_error.input",
+      "input_sha256": "b64219808b96cd5595a1cc03cd8259097b6757ec67eb31118f6f2448eb83176a",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006514,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006567,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006909,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-021",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-002_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-002_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-021_sanitizer_error.input",
+      "input_sha256": "ef4eda7d4abe5e752cfc548579fc1c90964ad7f58660479e5002e2aec681f654",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006674,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006656,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006757,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-022",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-003_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-003_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-022_sanitizer_error.input",
+      "input_sha256": "a31469e299454985812f2a53b8bd04925166a29417f075d665d571e61abd64d9",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006581,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006693,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006949,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-023",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_002.txt",
+      "seed_path": "/work/seeds/baseline_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-023_sanitizer_error.input",
+      "input_sha256": "2e3ab1c23e045976264d80b18001eccd2a5987361c595399e8a5bddf18e62488",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006859,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00673,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00927,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-024",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_003.txt",
+      "seed_path": "/work/seeds/baseline_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-024_sanitizer_error.input",
+      "input_sha256": "e78371db6276b098cd5cc5568147586e35bbfcf768818f06d25574ed74c6543f",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007133,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007282,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007135,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-025",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_005.txt",
+      "seed_path": "/work/seeds/baseline_seed_005.txt",
+      "input_path": "/work/crashes/FUZZ-025_sanitizer_error.input",
+      "input_sha256": "86581a8577106b1d741cd11530cffe31f29a48a761e53d3bc410cee7f8543775",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006365,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006504,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.0061,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-026",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_003.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-026_sanitizer_error.input",
+      "input_sha256": "c2b0b694418cbc991efe9e98883dc6034d73ad27673ee9edf7afb3393472e43f",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006136,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007509,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00688,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-027",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-002_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-002_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-027_sanitizer_error.input",
+      "input_sha256": "5a14ae3ab9522630138b2f4c6dc97ed743e0ac068ee9c4f54c47e0e03afa59b8",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006947,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006987,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006873,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-028",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-003_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-003_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-028_sanitizer_error.input",
+      "input_sha256": "1a8c8d64dcc1c898a1923fee01b7e51fb9cf3bfee991494ca397db917c30a572",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006819,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006798,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006794,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-029",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_002.txt",
+      "seed_path": "/work/seeds/baseline_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-029_sanitizer_error.input",
+      "input_sha256": "ded96ffd6b6a113a938c23279916477c745f601a8573744b2b77cae6a5492335",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.00718,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006906,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006945,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-030",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-030_sanitizer_error.input",
+      "input_sha256": "5259dbab8f7be39113b632edc562d90338ef4c2f4f7876f1aa599d53ec304345",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007461,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006627,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006373,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-031",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-001_seed_003.txt",
+      "seed_path": "/work/seeds/LLM-001_seed_003.txt",
+      "input_path": "/work/crashes/FUZZ-031_sanitizer_error.input",
+      "input_sha256": "77c559c214d165bfdbd43f89ccd219505bdb693707f62599113d3c3cc4dbd116",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006948,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006876,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006908,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-032",
+      "status": "CONFIRMED",
+      "seed_name": "LLM-002_seed_002.txt",
+      "seed_path": "/work/seeds/LLM-002_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-032_sanitizer_error.input",
+      "input_sha256": "fe9b77bb37feb9e4d9f84599880378d315b765e364be1ee679a0ef8bd1b39282",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.007627,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006677,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006977,
+          "matched": true
+        }
+      ]
+    },
+    {
+      "finding_id": "FUZZ-033",
+      "status": "CONFIRMED",
+      "seed_name": "baseline_seed_002.txt",
+      "seed_path": "/work/seeds/baseline_seed_002.txt",
+      "input_path": "/work/crashes/FUZZ-033_sanitizer_error.input",
+      "input_sha256": "cb2d40202dca070f0fc68bbc50184b3d32f9f7eac09503716af864cd29c78bc5",
+      "expected_issue_type": "sanitizer_error",
+      "expected_issue_signature": "sanitizer:AddressSanitizer",
+      "verification_runs": 3,
+      "matching_runs": 3,
+      "runs": [
+        {
+          "run_index": 0,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006791,
+          "matched": true
+        },
+        {
+          "run_index": 1,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006925,
+          "matched": true
+        },
+        {
+          "run_index": 2,
+          "issue_type": "sanitizer_error",
+          "issue_signature": "sanitizer:AddressSanitizer",
+          "exit_code": -6,
+          "timed_out": false,
+          "duration_seconds": 0.006853,
+          "matched": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_findings": 33,
+    "confirmed_count": 33,
+    "not_reproduced_count": 0
+  }
+}
