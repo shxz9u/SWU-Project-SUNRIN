@@ -10,7 +10,7 @@ cd "$ROOT_DIR"
 mkdir -p work/target work/seeds work/crashes work/logs
 
 echo "[ollama] starting Docker service"
-docker compose up -d ollama
+docker compose --profile local-ollama up -d ollama
 
 echo "[ollama] waiting for API at ${OLLAMA_BASE_URL}/api/tags"
 for attempt in $(seq 1 60); do

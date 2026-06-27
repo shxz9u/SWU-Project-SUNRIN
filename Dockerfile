@@ -5,6 +5,8 @@ ENV PYTHONUNBUFFERED=1 \
 
 WORKDIR /app
 
+RUN printf 'Acquire::ForceIPv4 "true";\n' > /etc/apt/apt.conf.d/99force-ipv4
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         ca-certificates \
@@ -14,6 +16,7 @@ RUN apt-get update \
         file \
         gcc \
         jq \
+        libclang-rt-19-dev \
         make \
     && rm -rf /var/lib/apt/lists/*
 

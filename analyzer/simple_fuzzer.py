@@ -293,6 +293,7 @@ def build_error_outputs(
     fuzz_result = {
         "status": "ERROR",
         "error": message,
+        "target_info": target_info,
         "summary": {
             "total_runs": 0,
             "suspicious_count": 0,
@@ -383,6 +384,7 @@ def main() -> int:
         rng_seed=args.seed,
         max_input_bytes=args.max_input_bytes,
     )
+    fuzz_result["target_info"] = target_info
     verification_result = verify_findings(
         binary_path=binary_path,
         findings=fuzz_result["suspicious_findings"],

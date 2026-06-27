@@ -2,6 +2,8 @@ services:
   ollama:
     image: ollama/ollama:latest
     container_name: ollama
+    profiles:
+      - local-ollama
     network_mode: host
     environment:
       OLLAMA_HOST: 127.0.0.1:11434
@@ -15,10 +17,8 @@ services:
       dockerfile: Dockerfile
     container_name: pi-gateway
     network_mode: host
-    depends_on:
-      - ollama
     environment:
-      OLLAMA_BASE_URL: http://127.0.0.1:11434
+      OLLAMA_BASE_URL: http://210.110.103.200:11434
       OLLAMA_MODEL: gemma4
       OLLAMA_CONNECT_RETRIES: 30
       OLLAMA_CONNECT_DELAY_SECONDS: 2
