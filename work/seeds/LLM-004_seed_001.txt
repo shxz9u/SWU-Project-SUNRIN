@@ -1,1 +1,1 @@
-log=%x%x%x%x
+log=device status ok

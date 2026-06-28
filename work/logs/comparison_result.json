@@ -27,16 +27,22 @@
       ],
       "detection_rate": 83.33,
       "confirmed_detection_rate": 50.0,
-      "candidate_or_case_count": 5,
+      "candidate_or_case_count": 6,
       "confirmed_count": 3,
-      "false_positive_count": 2,
+      "false_positive_count": 3,
       "resource": {
-        "wall_time_seconds": 43.377268,
-        "total_cpu_seconds": 0.836672,
-        "average_cpu_percent": 1.93,
-        "max_rss_kb": 107452
+        "wall_time_seconds": 51.405093,
+        "total_cpu_seconds": 0.795519,
+        "average_cpu_percent": 1.55,
+        "max_rss_kb": 106976
       },
       "candidate_ids_by_truth": {
+        "GT-002": [
+          "LLM-001",
+          "LLM-002",
+          "LLM-003",
+          "LLM-005"
+        ],
         "GT-001": [
           "LLM-001",
           "LLM-002",
@@ -46,12 +52,6 @@
           "LLM-001",
           "LLM-002",
           "LLM-003"
-        ],
-        "GT-002": [
-          "LLM-001",
-          "LLM-002",
-          "LLM-003",
-          "LLM-005"
         ],
         "GT-004": [
           "LLM-004"
@@ -82,10 +82,10 @@
       "confirmed_count": 20,
       "false_positive_count": 0,
       "resource": {
-        "wall_time_seconds": 0.600668,
-        "total_cpu_seconds": 0.613296,
-        "average_cpu_percent": 102.1,
-        "max_rss_kb": 107452
+        "wall_time_seconds": 0.618439,
+        "total_cpu_seconds": 0.633051,
+        "average_cpu_percent": 102.36,
+        "max_rss_kb": 106976
       }
     }
   ],
@@ -93,25 +93,25 @@
     "routes": {
       "llm_fuzzer": {
         "label": "llm_fuzzer",
-        "wall_time_seconds": 43.377268,
-        "self_user_cpu_seconds": 0.078795,
-        "self_system_cpu_seconds": 0.028655,
-        "child_user_cpu_seconds": 0.242579,
-        "child_system_cpu_seconds": 0.486643,
-        "total_cpu_seconds": 0.836672,
-        "average_cpu_percent": 1.93,
-        "max_rss_kb": 107452
+        "wall_time_seconds": 51.405093,
+        "self_user_cpu_seconds": 0.072168,
+        "self_system_cpu_seconds": 0.02505,
+        "child_user_cpu_seconds": 0.25552,
+        "child_system_cpu_seconds": 0.442781,
+        "total_cpu_seconds": 0.795519,
+        "average_cpu_percent": 1.55,
+        "max_rss_kb": 106976
       },
       "boofuzz": {
         "label": "boofuzz",
-        "wall_time_seconds": 0.600668,
-        "self_user_cpu_seconds": 0.238526,
-        "self_system_cpu_seconds": 0.023748,
-        "child_user_cpu_seconds": 0.139474,
-        "child_system_cpu_seconds": 0.211548,
-        "total_cpu_seconds": 0.613296,
-        "average_cpu_percent": 102.1,
-        "max_rss_kb": 107452
+        "wall_time_seconds": 0.618439,
+        "self_user_cpu_seconds": 0.224199,
+        "self_system_cpu_seconds": 0.028112,
+        "child_user_cpu_seconds": 0.134625,
+        "child_system_cpu_seconds": 0.246115,
+        "total_cpu_seconds": 0.633051,
+        "average_cpu_percent": 102.36,
+        "max_rss_kb": 106976
       }
     }
   },

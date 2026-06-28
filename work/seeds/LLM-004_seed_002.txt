@@ -1,1 +1,1 @@
-log=%s%s%s
+log=%x%x%x%x

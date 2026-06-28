@@ -2,8 +2,8 @@
 
 | Route | Detection Rate | Confirmed Detection Rate | Time (s) | CPU (s) | Avg CPU % | Max RSS (KB) | False Positives | Raw Result |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| LLM Fuzzer | 83.33% | 50.00% | 43.377268 | 0.836672 | 1.93% | 107452 | 2 | /work/logs/llm_fuzzer_result.json |
-| boofuzz | 66.67% | 66.67% | 0.600668 | 0.613296 | 102.10% | 107452 | 0 | /work/logs/boofuzz_result.json |
+| LLM Fuzzer | 83.33% | 50.00% | 51.405093 | 0.795519 | 1.55% | 106976 | 3 | /work/logs/llm_fuzzer_result.json |
+| boofuzz | 66.67% | 66.67% | 0.618439 | 0.633051 | 102.36% | 106976 | 0 | /work/logs/boofuzz_result.json |
 
 ## Notes
 

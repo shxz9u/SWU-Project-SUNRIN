@@ -1,1 +1,1 @@
-ssid=A
+ssid=iot-lab

@@ -2,7 +2,7 @@
 
 ## Environment Summary
 
-- Generated At: 2026-06-27T06:44:43.292633+00:00
+- Generated At: 2026-06-27T06:55:54.901859+00:00
 - Platform: Linux-6.17.0-35-generic-x86_64-with-glibc2.41
 - Python: 3.11.15
 - Target Source: /work/target/input.c
@@ -14,46 +14,47 @@
 ## LLM Candidate Summary
 
 - Status: OK
-- Candidate Count: 5
-- Duration Seconds: 42.571029
+- Candidate Count: 6
+- Duration Seconds: 50.638147
 
 | Candidate ID | Status | Type | Function | Confidence | Evidence |
 | --- | --- | --- | --- | --- | --- |
-| LLM-001 | CONFIRMED | buffer_overflow | parse_config_line | high | strcpy(ssid_tmp, value) |
-| LLM-002 | CONFIRMED | buffer_overflow | parse_config_line | high | strcpy(password_tmp, value) |
-| LLM-003 | CONFIRMED | buffer_overflow | parse_config_line | high | strcat(config->topic, value) |
-| LLM-004 | FALSE_POSITIVE | format_string | parse_config_line | high | printf(value) |
-| LLM-005 | FALSE_POSITIVE | hardcoded_credentials | parse_config_line | medium | ADMIN_USER "admin" / ADMIN_PASSWORD "sunrin_admin123" |
+| LLM-001 | CONFIRMED | buffer_overflow | parse_config_line | high | strcpy(ssid_tmp, value); |
+| LLM-002 | CONFIRMED | buffer_overflow | parse_config_line | high | strcpy(password_tmp, value); |
+| LLM-003 | CONFIRMED | buffer_overflow | parse_config_line | high | strcat(config->topic, value); |
+| LLM-004 | FALSE_POSITIVE | format_string | parse_config_line | high | printf(value); |
+| LLM-005 | FALSE_POSITIVE | hardcoded_credentials | parse_config_line | high | ADMIN_USER "admin" and ADMIN_PASSWORD "sunrin_admin123" |
+| LLM-006 | FALSE_POSITIVE | command_injection_risk | parse_config_line | medium | snprintf(command, sizeof(command), "ubus call gateway.%s", value); |
 
 ## Fuzzing Summary
 
 - Status: OK
 - Total Runs: 200
-- Suspicious Findings: 26
+- Suspicious Findings: 16
 - Crash Count: 0
 - Timeout Count: 0
-- Sanitizer Error Count: 27
+- Sanitizer Error Count: 17
 - Abnormal Exit Count: 0
-- Duration Seconds: 0.567122
+- Duration Seconds: 0.541474
 
 ## Verification Summary
 
 - Status: OK
 - Verification Runs Per Finding: 3
 - Confirmation Threshold: 2
-- Confirmed Finding Count: 26
+- Confirmed Finding Count: 16
 - Confirmed LLM Candidate Count: 3
 - Not Reproduced Count: 0
-- Duration Seconds: 0.232748
+- Duration Seconds: 0.22011
 
 ## Metrics
 
 | Metric | Value |
 | --- | --- |
 | Detection Rate | 83.33% |
-| Verification Success Rate | 60.00% |
-| False Positive Rate | 40.00% |
-| Total Time | 43.517091 seconds |
+| Verification Success Rate | 50.00% |
+| False Positive Rate | 50.00% |
+| Total Time | 51.557003 seconds |
 
 ## Final Classification Table
 
@@ -64,6 +65,7 @@
 | LLM-003 | LLM | CONFIRMED | buffer_overflow | N/A | N/A |
 | LLM-004 | LLM | FALSE_POSITIVE | format_string | N/A | N/A |
 | LLM-005 | LLM | FALSE_POSITIVE | hardcoded_credentials | N/A | N/A |
+| LLM-006 | LLM | FALSE_POSITIVE | command_injection_risk | N/A | N/A |
 | FUZZ-001 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-001_sanitizer_error.input |
 | FUZZ-002 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-002_sanitizer_error.input |
 | FUZZ-003 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-003_sanitizer_error.input |
@@ -80,16 +82,6 @@
 | FUZZ-014 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-014_sanitizer_error.input |
 | FUZZ-015 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-015_sanitizer_error.input |
 | FUZZ-016 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-016_sanitizer_error.input |
-| FUZZ-017 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-017_sanitizer_error.input |
-| FUZZ-018 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-018_sanitizer_error.input |
-| FUZZ-019 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-019_sanitizer_error.input |
-| FUZZ-020 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-020_sanitizer_error.input |
-| FUZZ-021 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-021_sanitizer_error.input |
-| FUZZ-022 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-022_sanitizer_error.input |
-| FUZZ-023 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-023_sanitizer_error.input |
-| FUZZ-024 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-024_sanitizer_error.input |
-| FUZZ-025 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-025_sanitizer_error.input |
-| FUZZ-026 | Fuzzing | CONFIRMED | sanitizer_error | 3/3 | /work/crashes/llm_fuzzer/FUZZ-026_sanitizer_error.input |
 
 ## Ground Truth
 

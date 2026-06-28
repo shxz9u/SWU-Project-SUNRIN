@@ -1,1 +1,1 @@
-password=A
+password=guest

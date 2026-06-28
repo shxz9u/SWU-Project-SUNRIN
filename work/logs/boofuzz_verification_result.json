@@ -2,7 +2,7 @@
   "status": "OK",
   "runs_per_finding": 3,
   "confirmation_threshold": 2,
-  "duration_seconds": 0.154593,
+  "duration_seconds": 0.153682,
   "findings": [
     {
       "finding_id": "BOOFUZZ-001",
@@ -22,7 +22,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.005048,
+          "duration_seconds": 0.004107,
           "matched": true
         },
         {
@@ -31,7 +31,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.00389,
+          "duration_seconds": 0.00396,
           "matched": true
         },
         {
@@ -40,7 +40,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.004369,
+          "duration_seconds": 0.003673,
           "matched": true
         }
       ]
@@ -63,7 +63,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.003438,
+          "duration_seconds": 0.003504,
           "matched": true
         },
         {
@@ -72,7 +72,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.003901,
+          "duration_seconds": 0.002908,
           "matched": true
         },
         {
@@ -81,7 +81,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.003832,
+          "duration_seconds": 0.003219,
           "matched": true
         }
       ]
@@ -104,7 +104,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.003559,
+          "duration_seconds": 0.002884,
           "matched": true
         },
         {
@@ -113,7 +113,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.003214,
+          "duration_seconds": 0.002858,
           "matched": true
         },
         {
@@ -122,7 +122,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.003061,
+          "duration_seconds": 0.002875,
           "matched": true
         }
       ]
@@ -145,7 +145,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.0032,
+          "duration_seconds": 0.002669,
           "matched": true
         },
         {
@@ -154,7 +154,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002941,
+          "duration_seconds": 0.002833,
           "matched": true
         },
         {
@@ -163,7 +163,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002624,
+          "duration_seconds": 0.002725,
           "matched": true
         }
       ]
@@ -186,7 +186,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002866,
+          "duration_seconds": 0.002703,
           "matched": true
         },
         {
@@ -195,7 +195,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002692,
+          "duration_seconds": 0.002846,
           "matched": true
         },
         {
@@ -204,7 +204,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002729,
+          "duration_seconds": 0.002964,
           "matched": true
         }
       ]
@@ -227,7 +227,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002639,
+          "duration_seconds": 0.002816,
           "matched": true
         },
         {
@@ -236,7 +236,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002683,
+          "duration_seconds": 0.002583,
           "matched": true
         },
         {
@@ -245,7 +245,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002478,
+          "duration_seconds": 0.002618,
           "matched": true
         }
       ]
@@ -268,7 +268,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002839,
+          "duration_seconds": 0.002721,
           "matched": true
         },
         {
@@ -277,7 +277,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002713,
+          "duration_seconds": 0.002679,
           "matched": true
         },
         {
@@ -286,7 +286,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002738,
+          "duration_seconds": 0.002828,
           "matched": true
         }
       ]
@@ -309,7 +309,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002622,
+          "duration_seconds": 0.002712,
           "matched": true
         },
         {
@@ -318,7 +318,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002635,
+          "duration_seconds": 0.002718,
           "matched": true
         },
         {
@@ -327,7 +327,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002707,
+          "duration_seconds": 0.002563,
           "matched": true
         }
       ]
@@ -350,7 +350,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.003013,
+          "duration_seconds": 0.002733,
           "matched": true
         },
         {
@@ -359,7 +359,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002838,
+          "duration_seconds": 0.002596,
           "matched": true
         },
         {
@@ -368,7 +368,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002689,
+          "duration_seconds": 0.002592,
           "matched": true
         }
       ]
@@ -391,7 +391,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002737,
+          "duration_seconds": 0.002528,
           "matched": true
         },
         {
@@ -400,7 +400,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002704,
+          "duration_seconds": 0.002541,
           "matched": true
         },
         {
@@ -409,7 +409,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002754,
+          "duration_seconds": 0.002589,
           "matched": true
         }
       ]
@@ -432,7 +432,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002704,
+          "duration_seconds": 0.002846,
           "matched": true
         },
         {
@@ -441,7 +441,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002632,
+          "duration_seconds": 0.002937,
           "matched": true
         },
         {
@@ -473,7 +473,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.00272,
+          "duration_seconds": 0.002596,
           "matched": true
         },
         {
@@ -482,7 +482,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.00293,
+          "duration_seconds": 0.002745,
           "matched": true
         },
         {
@@ -491,7 +491,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002762,
+          "duration_seconds": 0.002722,
           "matched": true
         }
       ]
@@ -514,7 +514,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002268,
+          "duration_seconds": 0.002586,
           "matched": true
         },
         {
@@ -523,7 +523,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002571,
+          "duration_seconds": 0.002978,
           "matched": true
         },
         {
@@ -532,7 +532,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": -6,
           "timed_out": false,
-          "duration_seconds": 0.002405,
+          "duration_seconds": 0.00288,
           "matched": true
         }
       ]
@@ -555,7 +555,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.00153,
+          "duration_seconds": 0.002013,
           "matched": true
         },
         {
@@ -564,7 +564,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001517,
+          "duration_seconds": 0.001707,
           "matched": true
         },
         {
@@ -573,7 +573,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001745,
+          "duration_seconds": 0.001827,
           "matched": true
         }
       ]
@@ -596,7 +596,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001671,
+          "duration_seconds": 0.001649,
           "matched": true
         },
         {
@@ -605,7 +605,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001803,
+          "duration_seconds": 0.001766,
           "matched": true
         },
         {
@@ -614,7 +614,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001846,
+          "duration_seconds": 0.001657,
           "matched": true
         }
       ]
@@ -637,7 +637,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001607,
+          "duration_seconds": 0.00182,
           "matched": true
         },
         {
@@ -646,7 +646,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001646,
+          "duration_seconds": 0.001768,
           "matched": true
         },
         {
@@ -655,7 +655,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001674,
+          "duration_seconds": 0.002075,
           "matched": true
         }
       ]
@@ -678,7 +678,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001755,
+          "duration_seconds": 0.001786,
           "matched": true
         },
         {
@@ -687,7 +687,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001594,
+          "duration_seconds": 0.002067,
           "matched": true
         },
         {
@@ -696,7 +696,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.002006,
+          "duration_seconds": 0.002196,
           "matched": true
         }
       ]
@@ -719,7 +719,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001765,
+          "duration_seconds": 0.002079,
           "matched": true
         },
         {
@@ -728,7 +728,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001933,
+          "duration_seconds": 0.002105,
           "matched": true
         },
         {
@@ -737,7 +737,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001812,
+          "duration_seconds": 0.001869,
           "matched": true
         }
       ]
@@ -760,7 +760,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001628,
+          "duration_seconds": 0.002095,
           "matched": true
         },
         {
@@ -769,7 +769,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001746,
+          "duration_seconds": 0.002072,
           "matched": true
         },
         {
@@ -778,7 +778,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.001865,
+          "duration_seconds": 0.002114,
           "matched": true
         }
       ]
@@ -801,7 +801,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.002037,
+          "duration_seconds": 0.002036,
           "matched": true
         },
         {
@@ -810,7 +810,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.00195,
+          "duration_seconds": 0.001905,
           "matched": true
         },
         {
@@ -819,7 +819,7 @@
           "issue_signature": "sanitizer:AddressSanitizer",
           "exit_code": 0,
           "timed_out": false,
-          "duration_seconds": 0.002038,
+          "duration_seconds": 0.002019,
           "matched": true
         }
       ]

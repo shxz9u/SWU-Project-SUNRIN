@@ -1,1 +1,1 @@
-topic=A
+topic=telemetry/
